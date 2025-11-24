@@ -3,50 +3,111 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MJ Maintenance - Portfolio</title>
+<title>MJ Maintenance – Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f0f0f0; color: #333; }
-header { background: #004080; color: white; padding: 40px 20px; text-align: center; }
-section { padding: 20px; margin: 20px auto; max-width: 800px; background: #ffffff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-h1, h2 { color: #004080; }
-.services ul { list-style-type: disc; margin-left: 20px; }
-.button { display: inline-block; background-color: #007ACC; color: white; padding: 10px 20px; margin-top: 10px; text-decoration: none; border-radius: 4px; }
-.button:hover { background-color: #005da6; }
-footer { background: #004080; color: white; text-align: center; padding: 10px; }
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #0e1a2b;
+  color: #e0e6ed;
+}
+header {
+  background: linear-gradient(135deg, #e30613, #00adef);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+header p {
+  margin: 10px 0 0;
+  font-size: 1.2rem;
+}
+section {
+  background: rgba(255,255,255,0.1);
+  margin: 40px auto;
+  padding: 40px;
+  max-width: 900px;
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+section h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #ffffff;
+}
+section p, section li {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.services ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.services li::before {
+  content: "•";
+  color: #00adef;
+  padding-right: 10px;
+}
+.button {
+  display: inline-block;
+  background: linear-gradient(135deg, #e30613, #00adef);
+  color: #fff;
+  padding: 12px 24px;
+  margin-top: 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 173, 239, 0.5);
+}
+footer {
+  background: #08101f;
+  color: #8fa2b7;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
 </style>
 </head>
 <body>
 <header>
   <h1>MJ Maintenance</h1>
-  <p>Spécialiste du dépannage et de l'entretien de pompes à chaleur, climatisation et chaudières</p>
+  <p>Spécialiste du dépannage et de l'entretien des pompes à chaleur, climatisation et chaudières</p>
 </header>
-
-<section class="about">
-  <h2>À propos de nous</h2>
-  <p>MJ Maintenance est une entreprise dédiée à assurer le bon fonctionnement et la longévité de vos équipements thermiques. Notre équipe intervient rapidement pour le dépannage et propose des contrats d’entretien adaptés à vos besoins.</p>
+<section>
+  <h2>À propos</h2>
+  <p>MJ Maintenance est une entreprise dédiée à l'efficacité et au confort énergétique. Notre mission est d'assurer le bon fonctionnement de vos installations thermiques grâce à une expertise technique et un service client irréprochable.</p>
 </section>
-
 <section class="services">
   <h2>Nos services</h2>
   <ul>
     <li>Dépannage de pompes à chaleur</li>
-    <li>Entretien régulier de pompes à chaleur</li>
-    <li>Dépannage de systèmes de climatisation</li>
-    <li>Entretien et nettoyage de climatisation</li>
+    <li>Entretien de systèmes de climatisation</li>
     <li>Réparation et maintenance de chaudières</li>
   </ul>
   <a href="#contact" class="button">Demander un devis</a>
 </section>
-
-<section class="contact" id="contact">
+<section id="contact">
   <h2>Contactez-nous</h2>
-  <p>Vous avez besoin d'un dépannage urgent ou souhaitez mettre en place un contrat d'entretien ? Contactez-nous pour un devis personnalisé.</p>
-  <p>Tél : 01 23 45 67 89<br>Email : contact@mjmaintenance.fr</p>
+  <p>Besoin d'un devis ou d'un renseignement supplémentaire ? Nous sommes à votre disposition !</p>
+  <p>Téléphone : 01 23 45 67 89</p>
+  <p>Email : <a href="mailto:contact@mjmaintenance.fr" style="color:#00adef;">contact@mjmaintenance.fr</a></p>
   <a href="mailto:contact@mjmaintenance.fr" class="button">Envoyer un email</a>
 </section>
-
 <footer>
-  <p>&copy; 2025 MJ Maintenance. Tous droits réservés.</p>
+  &copy; 2025 MJ Maintenance. Tous droits réservés.
 </footer>
 </body>
 </html>
