@@ -5,12 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MJ Maintenance - Portfolio</title>
 <style>
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f5f5f5; color: #333;}
-header { background: #333; color: white; padding: 20px; text-align: center;}
-section { padding: 20px; margin: 20px;}
-h1, h2 { color: #333;}
-.services ul { list-style-type: disc; margin-left: 20px;}
-footer { background: #333; color: white; text-align: center; padding: 10px;}
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f0f0f0; color: #333; }
+header { background: #004080; color: white; padding: 40px 20px; text-align: center; }
+section { padding: 20px; margin: 20px auto; max-width: 800px; background: #ffffff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+h1, h2 { color: #004080; }
+.services ul { list-style-type: disc; margin-left: 20px; }
+.button { display: inline-block; background-color: #007ACC; color: white; padding: 10px 20px; margin-top: 10px; text-decoration: none; border-radius: 4px; }
+.button:hover { background-color: #005da6; }
+footer { background: #004080; color: white; text-align: center; padding: 10px; }
 </style>
 </head>
 <body>
@@ -33,12 +35,14 @@ footer { background: #333; color: white; text-align: center; padding: 10px;}
     <li>Entretien et nettoyage de climatisation</li>
     <li>Réparation et maintenance de chaudières</li>
   </ul>
+  <a href="#contact" class="button">Demander un devis</a>
 </section>
 
-<section class="contact">
+<section class="contact" id="contact">
   <h2>Contactez-nous</h2>
   <p>Vous avez besoin d'un dépannage urgent ou souhaitez mettre en place un contrat d'entretien ? Contactez-nous pour un devis personnalisé.</p>
   <p>Tél : 01 23 45 67 89<br>Email : contact@mjmaintenance.fr</p>
+  <a href="mailto:contact@mjmaintenance.fr" class="button">Envoyer un email</a>
 </section>
 
 <footer>
